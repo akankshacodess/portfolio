@@ -582,11 +582,20 @@ span{
     animation: showRight 1s ease forwards;
     animation-delay: calc(.3s * var(--i));
 }
+@media (max-width: 1500px){
+    .container{
+        visibility: hidden;
+    }
+}
 
 @media (max-width: 1200px){
     html{
         font-size: 55%;
     }
+    .container{
+        visibility: hidden;
+    }
+    
 }
 
 @media (max-width:991px){
@@ -601,6 +610,9 @@ span{
     }
     .footer{
         padding: 2rem 4%;
+    }
+    .container{
+        visibility: hidden;
     }
 }
 
@@ -626,6 +638,9 @@ span{
         font-size: 2rem;
         margin: 3rem 0;
     }
+    .container{
+        visibility:visible;
+    }
 }
 
 @media (max-width:520px){
@@ -643,6 +658,9 @@ span{
         width:30px;
         height:38px;
     }
+    .container{
+        visibility:visible;
+    }
 }
 @media (max-width:462px){
     .home-content h1{
@@ -653,6 +671,9 @@ span{
     }
     .contact form .input-box .input-field{
         width:100%;
+    }
+    .container{
+        visibility:visible;
     }
 }
 @keyframes homeBgText{
